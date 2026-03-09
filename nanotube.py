@@ -99,8 +99,8 @@ sheet.center(vacuum=10.0)
 nome_poscar = f"POSCAR_{structure_name}_{n}_{m}_{winding}"
 nome_xyz = f"nt_{structure_name}_{n}_{m}_{winding}.xyz"
 
-sheet.write(nome_xyz)
-sheet.write(nome_poscar)
+sheet.write(nome_xyz, format="xyz")
+sheet.write(nome_poscar, format="vasp")
 
 print(f"Arquivos POSCAR: {nome_poscar} e xyz; {nome_xyz} gerados com sucesso!")
 print(f"Nanotubo gerado com sucesso! Raio aproximado: {R:.2f} Å")
